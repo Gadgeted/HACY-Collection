@@ -19,6 +19,16 @@
             position: relative;
             transition: color 0.3s ease-in-out;
         }
+        .sign{
+            color: white;
+            text-decoration: none;
+            background-color: black;
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: 300px;
+            display: inline-block;
+            text-align: center;
+        }
         .nav-link::after {
             content: '';
             position: absolute;
@@ -75,10 +85,11 @@
                     <label for="confirm-password" class="form-label">Confirm Password</label>
                     <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password" required>
                 </div>
-                <button type="submit" class="btn btn-dark w-100">Sign Up</button>
+                <a href="Login.html" class="sign">SignUp</a>
+                <!-- <button type="submit" class="btn btn-dark w-100"></button> -->
             </form>
             <div class="text-center mt-3">
-                <p>Already have an account? <a href="#login" class="text-light">Login</a></p>
+                <p>Already have an account? <a href="Login.html" class="text-light">Login</a></p>
             </div>
         </div>
     </div>
