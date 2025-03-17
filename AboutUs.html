@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACY-Collection - About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&display=swap');
+        body {
+            background: linear-gradient(to right, #4a148c, #880e4f);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background-color: #6a1b9a;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+            height: 3px;
+            background-color: black;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+        }
+        .about-us-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .about-us-section h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .about-us-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">HACY-Collection</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-dark" href="Login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-dark" href="SignUp.html">SignUp</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-us-section">
+        <h1>About HACY-Collection</h1>
+        <p>
+            Welcome to HACY-Collection! We are passionate creators and curators of unique, stylish, and eco-friendly tote bags designed to bring functionality and flair to your everyday life. 
+            Our journey started with a simple goal: to offer high-quality tote bags that reflect both individuality and environmental consciousness. Each of our designs is crafted with love, 
+            blending practicality with artistry to suit every occasion and personality. 
+        </p>
+        <p>
+            At HACY-Collection, sustainability is at the heart of what we do. We believe in making a difference through responsible choices, using materials that are kind to the environment 
+            and ensuring every step of our process upholds our commitment to ethical practices. Whether you're heading to the market, the beach, or a casual outing, we've got the perfect tote 
+            to accompany you on your adventures.
+        </p>
+        <p>
+            Thank you for choosing HACY-Collection. Together, let’s make every bag a statement for style, functionality, and sustainability.
+        </p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
